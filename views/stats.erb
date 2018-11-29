@@ -1,0 +1,10 @@
+<h1>Meet <%= @@tamagotchi.name %>, your new tamagotchi!</h1>
+<h3>These are your tamagotchi's stats:</h3>
+<ul>
+  <li>Hunger = <%= @@tamagotchi.food %></li>
+  <li>Rest = <%= @@tamagotchi.rest %></li>
+  <li>Boredom = <%= @@tamagotchi.activity %></li>
+</ul>
+<form class="" action="/interact" method="get">
+  <button type="submit" name="button">Start interactin with your tamagotchi</button>
+</form>

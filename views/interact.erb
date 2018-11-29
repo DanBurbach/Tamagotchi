@@ -1,0 +1,20 @@
+<h3>These are <%= @@tamagotchi.name %>'s tamagotchi's stats:</h3>
+<ul>
+  <li>Hunger = <%= @@tamagotchi.food %></li>
+  <li>Rest = <%= @@tamagotchi.rest %></li>
+  <li>Boredom = <%= @@tamagotchi.activity %></li>
+</ul>
+
+
+<form action="/stats" method="post">
+  <label for="feed">Feed your tamagotchi. how much food? Enter a value from 1 to 99</label>
+  <input type="number" name="feed">
+
+  <label for="rest">let your tamagotchi rest. How much rest? Enter a value between 1-99</label>
+  <input type="number" name="rest">
+
+  <label for="activity">Excersize your tamagotchi. How much excersize? Enter a value between 1-99</label>
+  <input type="number" name="activity">
+
+  <button type="submit" name="button">Submit</button>
+</form>
